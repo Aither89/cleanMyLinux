@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+"""Lanceur CleanMyLinux : utilise le Python système (celui qui dispose de PyGObject/GTK4)."""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+from cleanmylinux.app import main  # noqa: E402
+
+sys.exit(main())
